@@ -33,4 +33,8 @@ export class Account{
          this.bookingId = 0;
          this.lastBooking = "";
     }
+    assignId(){
+        this.bookingId += 1;
+        return this.bookingId;
+    }
  
