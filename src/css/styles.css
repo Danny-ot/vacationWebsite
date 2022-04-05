@@ -1,0 +1,357 @@
+body{
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.page{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(44, 43, 43, 0.589) , rgba(44, 43, 43, 0.315) ) , url(https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+}
+.navbar h1{
+    color: rgb(255, 0, 0);
+    font-size: 50px;
+}
+
+.navbar>ul{
+    display: flex;
+}
+.navbar>ul>li{
+    font-weight: 500;
+    cursor: pointer;
+    list-style: none;
+}
+
+.navbar>ul>li>a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.navbar>ul>li>a:hover{
+    color:rgb(255, 0, 0);
+}
+
+.fa-bars , #menu{
+    font-size: 40px;
+    display: none;
+    cursor: pointer;
+}
+
+.active{
+    display: none;
+}
+
+div[data-div="content"]{
+    margin-top: 60px;
+}
+
+
+#book-receipt{
+    display: none;
+}
+div[data-div="content"] button , #book-vaca button{
+    width: 150px;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    transition: .5s;
+}
+
+div[data-div="content"] button:hover , #book-vaca button:hover{
+    color: black;
+    background-color: white;
+}
+
+#book-vaca input{
+    border: 1px solid rgb(255, 0, 0);
+    height: 35px;
+}
+
+#book-vaca label{
+    color: rgb(255, 0, 0);
+    margin-top: 10px;
+    font-size: large;
+}
+
+#book-receipt label{
+    color: rgb(255, 0, 0);
+    font-size: large;
+}
+
+#book-receipt h1{
+    color: rgb(255, 0, 0);
+}
+
+.signup{
+    width: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.295));
+    display: none;
+}
+
+.signup-login{
+    justify-content: center;
+    display: flex;
+}
+
+.signup>p>a{
+    text-decoration: none;
+    color:  rgb(255, 0, 0) ;
+}
+
+.signup-here{
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.signup > .sign-form input{
+    width: 100%;
+    margin-top: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(255, 0, 0);
+    color: white;
+}
+
+.signup > .sign-form select{
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    border: 1px solid rgb(255, 0, 0);
+    color: white;
+}
+
+#book-receipt p{
+    color: white;
+    font-size: 20px;
+}
+
+.signup>.sign-form input:focus{
+    outline: none;
+    color: white;
+    background: transparent;
+}
+
+.signup > .sign-form select:focus{
+    outline:  1px solid rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+    background: transparent;
+}
+
+
+.signup>.sign-form input:active{
+    background-color: transparent;
+}
+
+.signup>.sign-form input::placeholder{
+    color: white;
+}
+
+.gallery>h1 , .services>h1{
+    color: rgb(255, 0, 0);
+}
+
+.error-message{
+    color: rgb(255, 0, 0);
+}
+
+.user-page{
+    display: none;
+}
+
+#div-vacation{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 80%;
+}
+
+#div-username h1{
+     font-size: 60px;
+     color:white;
+}
+
+.gallery-img img{
+    width: 300px;
+    height: 130px;
+}
+
+.services-div{
+    width: 350px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.services-div > img{
+    width: 350px;
+    height: 200px;
+}
+
+.services-div > div{
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.services-div>h3{
+    position: absolute;
+    top: 0;
+    transform: translate(360px , 90px);
+    color: white;
+}
+
+.services-div:hover.services-div > div{
+    background-color: rgba(255, 0, 0, 0.466);
+    transition: 0.5s;
+}
+
+.services-div:hover.services-div > h3{
+    transform: translate(100px , 90px);
+    transition: 0.5s;
+}
+
+.footer {
+    background-color: #022739;
+    margin-top: 90px;
+}
+.footer .Follow {
+    margin-bottom: 27px;
+}
+.footer .Follow h3 {
+    color: #fff;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-width: 1px;
+    display: inline-block;
+    padding-bottom: 2px;
+    padding-bottom: 27px;
+}
+.footer span {
+    font-size: 17px;
+    display: block;
+    color: #fff;
+}
+ul.link li a {
+    color: #fff;
+    font-size: 17px;
+}
+ul.link li a:hover {
+    color: #878686;
+}
+.footer .Newsletter {
+    padding: 13px 26px;
+    padding-top: 10px;
+    padding-right: 26px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    border: #fff solid 1px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.footer .Subscribe {
+    padding: 10px 30px;
+    border: #0e0c0c solid 1px;
+    background: #0e0c0c;
+    color: #fff;
+    float: right;
+}
+.footer .Subscribe:hover {
+    color: #fff;
+    background-color: #15cfe5;
+}
+.pdn-top-30 {
+    padding-top: 35px;
+}
+ul.location_icon {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: left;
+}
+ul.location_icon li {
+    float: left;
+    height: 70px;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-right: 20px;
+}
+ul.location_icon li:last-child {
+    padding-right: 0px;
+}
+ul.location_icon li a {
+    margin-bottom: 23px;
+}
+ul.location_icon span {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+@media(max-width:1000px){
+    .fa-bars , #menu{
+        display: block;
+    } 
+    .navbar>h1{
+        font-size: 35px;
+    }
+    .navbar>ul{
+        flex-direction: column;
+        background-color: white;
+        width: 250px;
+        align-items: center;
+        justify-content: center;
+        padding: 23px 0;
+        position: absolute;
+        right: 70px;
+        top: 50px;
+        transition: 0.5s;
+        display: none;
+    }
+    .services , .gallery{
+        z-index: -1;
+    }
+    .navbar>ul>li{
+        padding: 16px 0px;
+    }
+    .navbar>ul>li>a{
+        color: black;
+    }
+    #div-vacation{
+        flex-direction: column;
+    }
+    #div-vacation h1{
+        font-size: 30px;
+    }
+    .gallery p , .services p{
+        font-size: large;
+    }
+    .services>.d-flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .page{
+        height: 150vh;
+    }
+    .signup-login{
+        margin-top: 100px;
+    }
+}
