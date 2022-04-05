@@ -62,6 +62,50 @@ $("#signup-form").submit((e)=>{
     }
 });
 
+// Login Form Submit Event
+$("#login-form").submit((e)=>{
+    e.preventDefault();
+    let email = $("#signin-email").val();
+    let passWord = $("#signin-password").val();
+    if(email === "" || passWord === ""){
+        $("#login-error").text("Input both fields");
+    }else{
+        let account = vacation.findAccount(email , passWord);
+        if(account === false || account === "Invalid password or email"){
+            $("#login-error").text("Invalid password or email");
+        }else{
+            $("#login-error").text("");
+            $("#signin-email").val("");
+            $("#signin-password").val("");
+            $("#userpage-username").text(`Welcome Back ${account.username}`);
+            $(".landing-page").hide();
+            $(".user-page").show();
+            
 
+            // Book Submit Event
+            $("#book-vaca").submit((e)=>{
+                e.preventDefault();
+                const country = $("#vaca-country").val();
+                const state = $("#vaca-state").val();
+                const duration = $("#duration-val").find(":selected").val();
+                const departMonth = $("#vaca-depart-month").val();
+                const deparDate = $("#vaca-depart-date").val();
+                const vacaHotel = $("#vaca-hotel").val();
+
+                const ticket = new BookVacation(country , state , vacaHotel , departMonth , deparDate , duration);
+                account.book(ticket);
+
+                $("#receipt-country").text(ticket.country);
+                $("#receipt-state").text(ticket.state);
+                $("#receipt-hotel").text(ticket.hotel);
+                $("#receipt-depart-date").text(ticket.deparDate);
+                $("#receipt-depart-time").text(ticket.getDeparture());
+                $("#receipt-duration").text(ticket.duration);
+                $("#book-vaca-parent").hide();
+                $("#book-receipt").show();
+            });
+        }
+    }
+});
 
 });
