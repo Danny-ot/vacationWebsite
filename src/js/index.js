@@ -102,7 +102,7 @@ $("#login-form").submit((e)=>{
                 $("#receipt-depart-time").text(ticket.getDeparture());
                 $("#receipt-duration").text(ticket.duration);
                 $("#book-vaca-parent").hide();
-                $("#book-receipt").show
+                $("#book-receipt").show();
             });
         }
     }
