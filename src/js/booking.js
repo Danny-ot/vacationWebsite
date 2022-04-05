@@ -37,4 +37,10 @@ export class Account{
         this.bookingId += 1;
         return this.bookingId;
     }
- 
+    book(ticket){
+        ticket.id = this.assignId();
+        this.bookings[ticket.id] = ticket;
+        this.lastBooking = new Date().toLocaleDateString();
+    }
+}
+
