@@ -6,11 +6,11 @@
 ### By 
     [
         Name : Oladeji Daniel Oluwatimleyin
-    Github : Danny-ot
+        Github : Danny-ot
     ]
     [
         Name : Durodola Adeola
-    Github : durodola adeola
+        Github : durodola adeola
     ]
     
 
