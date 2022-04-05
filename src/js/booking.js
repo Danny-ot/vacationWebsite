@@ -44,3 +44,19 @@ export class Account{
     }
 }
 
+// BookVation Class 
+export class BookVacation{
+    constructor(country , state ,  hotel , month , deparDate , duration){
+        this.month = month;
+        this.country = country;
+        this.hotel = hotel;
+        this.state = state;
+        this.deparDate = deparDate;
+        this.duration = duration;
+     }
+    getDeparture(){
+        let departTime = ["12:00pm" , "4:00pm" , "8:30pm" , "11:30pm"]
+        let time = Math.floor(Math.random() * departTime.length)
+        return departTime[time]
+    }
+}
