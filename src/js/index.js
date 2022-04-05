@@ -14,5 +14,28 @@ menu.onclick = function(){
 };
 
 
+$(document).ready(function(){
+    $("#signup-username").val("");
+    $("#signup-email").val("");
+    $("#signup-password").val("");
+    $("#confirm-password").val("");
+    $("#signin-email").val("");
+    $("#signin-password").val("");
+    let vacation = new Vacation();
+
+
+    // Click Event For Showing Signup
+   $('.sign-up-btn').click(()=>{
+    $("#log-in").hide();
+    $("#sign-up").toggle();
+});
+
+// Click Event For Showing Login
+$(".sign-in-btn").click(()=>{
+    $("#sign-up").hide();
+    $("#log-in").toggle();
+});
+
+
 
 });
